@@ -1,1 +1,32 @@
-<p>navbar works!</p>
+<div class="container">
+    <header class="d-flex justify-content-center py-3 dark-bg">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" routerLink="/login/"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" routerLink="/perros/"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" routerLink="/login/"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link dropdown-toggle" id="pills-animales-tab" routerLink="/login/" type="button" role="tab" aria-controls="pills-animales"
+                    aria-expanded="false">Animales</button>
+                <ul class="dropdown-menu" id="pills-animales" role="tabpanel" aria-labelledby="pills-animales-tab">
+                    <li><a class="dropdown-item" href="#">perro</a></li>
+                    <li><a class="dropdown-item" href="#">gato</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-about-tab" routerLink="/login/"
+                    type="button" role="tab" aria-controls="pills-about" aria-selected="false">About</button>
+            </li>
+        </ul>
+    </header>
+</div>
