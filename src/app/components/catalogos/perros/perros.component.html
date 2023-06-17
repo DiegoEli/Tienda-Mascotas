@@ -1,1 +1,42 @@
-<p>perros works!</p>
+<section id="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="productHeading text-center">
+                    <h2 class="mb-3">Catalogo para Perros</h2> 
+                    <ul class="list-unstyled d-flex   justify-content-center ">
+                        <li><a href="#" class=" m-4  text-decoration-none text-danger fw-semibold  ">New Arrival</a></li>
+                        <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black">Best Sellers</a></li>
+                        <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black">Featured</a></li>
+                        <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black ">Special Offer</a></li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row mt-3">
+                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductos">
+                        <div class="box-shadow">
+                            <div class="card">
+                                <img class="img-fluid" style="height: 200px;" [src]="product.urlFoto" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">{{product.nombre}}</h5>
+                                    <p class="card-text">Precio: <span
+                                            class="text-danger fw-semibold me-2">${{product.precioVenta}}</span><del> ${{product.precioVenta}}</del>
+                                        <span class="text-success ms-2">35% Off</span>
+                                        <br>Disponible: <span
+                                        class="text-black fw-semibold me-2">{{product.stock}}</span></p>                                     
+                                    <div class="text-center">
+                                        <button class="btn btn-sm btn-primary" 
+                                            (click)="agregarCarrito()">
+                                            <i class="bi bi-cart-plus-fill"></i> Añadir al Carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
