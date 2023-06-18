@@ -3,7 +3,7 @@
     <div class="container">
         <nav class="p-1 navbar navbar-light bg-light">
             <span>
-                <a href="">Inicio</a>/Catalogo Perro
+                <a href="">Inicio</a>/Catalogo Gato
             </span>
         </nav>
         <div class="row mt-2">
@@ -32,15 +32,15 @@
             </div>
             <div class="col-10">
                 <div class="productHeading text-center">
-                    <img class="card-img-top mt-1" src="./assets/img/banner-catalogo.jpg" alt="Card image cap">
-                    <h3 class="mb-3">Catálogo para Perros</h3>
+                    <img class="card-img-top mt-1" src="./assets/img/banner-tiposdegatos.png" style="width: 750px">
+                    <h3 class="mb-3">Catálogo para Gatos</h3>
                     <hr>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductos">
+                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductosGatos">
                         <div class="box-shadow">
                             <div class="card">
-                                <img class="img-fluid" style="height: 150px;" [src]="product.urlFoto" class="card-img-top"
+                                <img class="img-fluid" style="height: 100px width=75px;" [src]="product.urlFoto" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
                                     <h6 class="card-title text-center">{{product.nombre}}</h6>

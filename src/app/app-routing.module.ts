@@ -4,12 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { PerrosComponent } from './components/catalogos/perros/perros.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { GatosComponent } from './components/catalogos/gatos/gatos.component';
 
 const routes: Routes = [
   { path:'',redirectTo: 'login', pathMatch: 'full' },
   { path:'login', component: LoginComponent },
   { path:'navbar', component: NavbarComponent },
   { path:'perros', component: PerrosComponent },
+  { path:'gatos', component: GatosComponent },
   { path:'**',redirectTo: 'login', pathMatch: 'full' }
 ];
 
