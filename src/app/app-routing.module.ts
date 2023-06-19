@@ -10,7 +10,6 @@ import { ConejosComponent } from './components/catalogos/conejos/conejos.compone
 const routes: Routes = [
   { path:'',redirectTo: 'login', pathMatch: 'full' },
   { path:'login', component: LoginComponent },
-  { path:'navbar', component: NavbarComponent },
   { path:'perros', component: PerrosComponent },
   { path:'gatos', component: GatosComponent },
   { path:'conejos', component: ConejosComponent },
