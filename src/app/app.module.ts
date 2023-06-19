@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PerrosComponent } from './components/catalogos/perros/perros.component';
 import { GatosComponent } from './components/catalogos/gatos/gatos.component';
+import { ConejosComponent } from './components/catalogos/conejos/conejos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GatosComponent } from './components/catalogos/gatos/gatos.component';
     NavbarComponent,
     FooterComponent,
     PerrosComponent,
-    GatosComponent
+    GatosComponent,
+    ConejosComponent
   ],
   imports: [
     BrowserModule,

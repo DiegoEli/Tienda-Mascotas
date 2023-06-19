@@ -3,7 +3,7 @@
     <div class="container">
         <nav class="p-1 navbar navbar-light bg-light">
             <span>
-                <a href="">Inicio</a>/Catalogo Perro
+                <a href="">Inicio</a>/Catalogo Conejos
             </span>
         </nav>
         <div class="row mt-2">
@@ -32,12 +32,12 @@
             </div>
             <div class="col-10">
                 <div class="productHeading text-center">
-                    <img class="card-img-top mt-1" src="./assets/img/banner-catalogo.jpg" alt="Card image cap">
-                    <h3 class="mb-3">Catálogo para Perros</h3>
+                    <img class="card-img-top mt-1" src="./assets/img/banner-conejos.jpg" alt="Card image cap" width="100" height="180">
+                    <h3 class="mb-3">Catálogo para Conejos</h3>
                     <hr>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductos">
+                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductosConejos">
                         <div class="box-shadow">
                             <div class="card">
                                 <img class="img-fluid" style="height: 150px;" [src]="product.urlFoto" class="card-img-top"
@@ -46,7 +46,7 @@
                                     <h6 class="card-title text-center">{{product.nombre}}</h6>
                                     <p class="card-text">Precio: <span
                                             class="text-danger fw-semibold me-2">${{product.precioVenta}}</span><del> ${{product.precioVenta}}</del>
-                                        <span class="text-success ms-2">35% Off</span>
+                                        <span class="text-success ms-2">10% Off</span>
                                         <br>Disponible: <span
                                         class="text-black fw-semibold me-2">{{product.stock}}</span></p>                                     
                                     <div class="text-center">
