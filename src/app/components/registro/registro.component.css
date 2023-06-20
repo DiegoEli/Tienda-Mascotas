@@ -1,0 +1,169 @@
+.bg-register-image {
+    background: url(https://img.freepik.com/foto-gratis/escuchandote-perro-joven-bulldog-frances-planteando-lindo-perrito-o-mascota-blanco-negro-jugueton-jugando-parece-feliz-aislado-sobre-fondo-blanco-concepto-movimiento-accion-movimiento_155003-34898.jpg?w=740&t=st=1687226668~exp=1687227268~hmac=a266e6bad321b53b7383ee23a9913f02cf3b8cc650c865dedd70664d5724cd9e/600x800);
+    background-position: center;
+    background-size: cover
+}
+.sidebar.toggled .sidebar-card {
+    display: none
+}
+
+.container{
+    margin-top: 4%;
+}
+
+a{
+    color: #4e73df;
+    text-decoration: none;
+    background-color: transparent
+}
+
+/*IMAGEN*/
+.bg-login-image {
+    background: url(https://img.freepik.com/foto-gratis/lindo-mascota-collage-aislado_23-2150007407.jpg?w=740&t=st=1686898994~exp=1686899594~hmac=ba1b3504c354e6b1e4b29edb6c20b382c5e9e1fbb02a40d83d31046ad747f01f/600x800);
+    background-position: center;
+    background-size: cover
+}
+
+form.user .btn-user {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: .75rem 1rem
+}
+
+form.user .custom-checkbox.small label {
+    line-height: 1.5rem
+}
+
+form.user .form-control-user {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: 1.5rem 1rem
+}
+
+a:hover {
+    color: #224abe;
+    text-decoration: underline
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.h4,h4 {
+    font-size: 1.5rem
+}
+
+.small,small {
+    font-size: 80%;
+    font-weight: 400
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: .35rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+
+.form-group {
+    margin-bottom: 1rem
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #4e73df;
+    border-color: #4e73df
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2e59d9;
+    border-color: #2653d4
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0
+}
+
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #b7b9cc solid 1px
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: .35rem
+}
+
+.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #4e73df;
+    background-color: #4e73df
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: 50%/50% 50% no-repeat
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e")
+}
+
+.bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+}

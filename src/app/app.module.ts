@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PerrosComponent } from './components/catalogos/perros/perros.component';
 import { GatosComponent } from './components/catalogos/gatos/gatos.component';
 import { ConejosComponent } from './components/catalogos/conejos/conejos.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConejosComponent } from './components/catalogos/conejos/conejos.compone
     FooterComponent,
     PerrosComponent,
     GatosComponent,
-    ConejosComponent
+    ConejosComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
