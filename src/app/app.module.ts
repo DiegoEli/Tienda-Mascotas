@@ -10,6 +10,7 @@ import { PerrosComponent } from './components/catalogos/perros/perros.component'
 import { GatosComponent } from './components/catalogos/gatos/gatos.component';
 import { ConejosComponent } from './components/catalogos/conejos/conejos.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { RestablecerContraComponent } from './components/restablecer-contra/restablecer-contra.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     PerrosComponent,
     GatosComponent,
     ConejosComponent,
-    RegistroComponent
+    RegistroComponent,
+    RestablecerContraComponent
   ],
   imports: [
     BrowserModule,

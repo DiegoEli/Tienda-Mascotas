@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { GatosComponent } from './components/catalogos/gatos/gatos.component';
 import { ConejosComponent } from './components/catalogos/conejos/conejos.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { RestablecerContraComponent } from './components/restablecer-contra/restablecer-contra.component';
 
 const routes: Routes = [
   { path:'',redirectTo: 'login', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path:'gatos', component: GatosComponent },
   { path:'conejos', component: ConejosComponent },
   { path:'registro', component: RegistroComponent },
+  { path:'restablecer-contra', component: RestablecerContraComponent },
   { path:'**',redirectTo: 'login', pathMatch: 'full' }
 ];
 
