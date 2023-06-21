@@ -11,6 +11,8 @@ import { GatosComponent } from './components/catalogos/gatos/gatos.component';
 import { ConejosComponent } from './components/catalogos/conejos/conejos.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { RestablecerContraComponent } from './components/restablecer-contra/restablecer-contra.component';
+import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RestablecerContraComponent } from './components/restablecer-contra/rest
     GatosComponent,
     ConejosComponent,
     RegistroComponent,
-    RestablecerContraComponent
+    RestablecerContraComponent,
+    SobreNosotrosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,31 +1,45 @@
 <div class="container">
-    <header class="d-flex justify-content-center py-3 dark-bg">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+        <a class="navbar-brand col-lg-3 me-0" routerLink="/#/">MENU PRINCIPAL/LOGO</a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="pills-tab" role="tablist">
+
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-login-tab" routerLink="/login/" type="button" role="tab"
-                    aria-controls="pills-login" aria-selected="true">Login</button>
+                <button class="nav-link" id="pills-home-tab" routerLink="/#/" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="false">Home</button>
             </li>
+
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-catalogo-tab" routerLink="/perros/" type="button" role="tab"
-                    aria-controls="pills-catalogo" aria-selected="false">Catalago</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-mascotas-tab" routerLink="/perros/" type="button" role="tab"
-                    aria-controls="pills-mascotas" aria-selected="false">Mascotas</button>
-            </li>
-            <!-- <li class="nav-item" role="presentation">
-                <button class="nav-link dropdown-toggle" id="pills-animales-tab" type="button" role="tab"
-                    aria-controls="pills-animales" aria-expanded="true">Animales</button>
-                <ul class="dropdown-menu" id="pills-animales" role="tabpanel" aria-labelledby="pills-animales-tab">
-                    <li><a class="dropdown-item" href="#">perro</a></li>
-                    <li><a class="dropdown-item" href="#">gato</a></li>
-                    <li><a class="dropdown-item" href="#">conejo</a></li>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Catalogo</a>
+                <ul class="dropdown-menu" data-bs-popper="static">
+
+                    <h6 class="dropdown-header"> Mascotas</h6>
+                    <li><a class="dropdown-item" routerLink="/perros/">Perros</a></li>
+                    <li><a class="dropdown-item" routerLink="/gatos/">Gatos</a></li>
+                    <li><a class="dropdown-item" routerLink="/conejos/">Conejos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <h6 class="dropdown-header"> Categorías</h6>
+                    <li><a class="dropdown-item" routerLink="/#/">Todas</a></li>
+                    <li><a class="dropdown-item" routerLink="/#/">Alimento</a></li>
+                    <li><a class="dropdown-item" routerLink="/#/">Juguetes</a></li>
+                    <li><a class="dropdown-item" routerLink="/#/">Limpieza</a></li>
+                    <li><a class="dropdown-item" routerLink="/#/">Salud</a></li>
                 </ul>
-            </li> -->
+            </li>
+
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-about-tab" routerLink="/perros/" type="button" role="tab"
+                <button class="nav-link" id="pills-about-tab" routerLink="/sobre-nosotros/" type="button" role="tab"
                     aria-controls="pills-about" aria-selected="false">Sobre Nosotros</button>
             </li>
         </ul>
+
+        <div class="col-md-3 text-end">
+            <button type="button" routerLink="/login/" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" routerLink="/registro/" class="btn btn-primary">Registrarse</button>
+        </div>
+
     </header>
 </div>
+
