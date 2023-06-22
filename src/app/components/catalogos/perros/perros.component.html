@@ -46,11 +46,32 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-center">{{product.nombre}}</h5>
                                     <p class="card-text">Precio: <span
-                                            class="text-danger fw-semibold me-2">${{product.precioVenta}}</span>
+                                            class="text-danger fw-semibold me-2">$ {{product.precioVenta.toFixed(2)}}</span>
                                         <br>Disponible: <span
                                         class="text-black fw-semibold me-2">{{product.stock}}</span></p>                                     
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#exampleModal"><i class="bi bi-eye"></i></button>
+                                        <button type="button" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#exampleModalCenter"><i class="bi bi-eye"></i></button>
+
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
                                         <button class="btn btn-sm btn-primary" style="margin-left: 4px;" 
                                             (click)="agregarCarrito()">
                                             <i class="bi bi-cart-plus-fill"></i> Añadir al Carrito</button>
@@ -65,22 +86,4 @@
     </div>
 </section>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
