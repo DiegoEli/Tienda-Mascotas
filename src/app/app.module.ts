@@ -9,6 +9,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PerrosComponent } from './components/catalogos/perros/perros.component';
 import { GatosComponent } from './components/catalogos/gatos/gatos.component';
 import { ConejosComponent } from './components/catalogos/conejos/conejos.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { RestablecerContraComponent } from './components/restablecer-contra/restablecer-contra.component';
+import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ConejosComponent } from './components/catalogos/conejos/conejos.compone
     FooterComponent,
     PerrosComponent,
     GatosComponent,
-    ConejosComponent
+    ConejosComponent,
+    RegistroComponent,
+    RestablecerContraComponent,
+    SobreNosotrosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
