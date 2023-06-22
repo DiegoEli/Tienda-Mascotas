@@ -13,6 +13,8 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { RestablecerContraComponent } from './components/restablecer-contra/restablecer-contra.component';
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarritoComponent } from './components/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { HomeComponent } from './components/home/home.component';
     RegistroComponent,
     RestablecerContraComponent,
     SobreNosotrosComponent,
-    HomeComponent
+    HomeComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

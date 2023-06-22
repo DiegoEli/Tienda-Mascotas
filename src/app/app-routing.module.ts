@@ -9,6 +9,7 @@ import { RestablecerContraComponent } from './components/restablecer-contra/rest
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
 
 const routes: Routes = [
   { path:'',redirectTo: 'home', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path:'registro', component: RegistroComponent },
   { path:'restablecer-contra', component: RestablecerContraComponent },
   { path:'sobre-nosotros', component: SobreNosotrosComponent },
+  { path:'carrito', component: CarritoComponent },
   { path:'**',redirectTo: 'home', pathMatch: 'full' }
 ];
 

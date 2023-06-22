@@ -1,0 +1,52 @@
+<section id="carrito">
+    <div class="container">
+        <div class="productHeading text-center">
+            <img class="card-img-top mt-1" src="./assets/img/carrito.jpg" alt="Card image cap">
+            <h1 class="mb-3">Carrito de Compras</h1>
+            <hr>
+        </div>
+        <div class="row mt-2">
+            <div class="col-9">
+                <table class="table table-hover">
+                    <thead>
+                      <tr >
+                        <th scope="col">#</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Descrip.</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cant.</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Quitar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of listPedido;let indice=index">
+                        <th scope="row">{{indice+1}}</th>
+                        <td><img src="{{item.urlFoto}}" style="height: 90px;"></td>
+                        <td>{{item.descripcion}}</td>
+                        <td>$ {{item.precioVenta.toFixed(2)}}</td>
+                        <td>{{item.cantidad}}</td>
+                        <td>$ {{item.total.toFixed(2)}}</td>
+                        <td class="text-danger h4"><i class="bi bi-trash3-fill"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Total a Pagar</b></h4>
+                        <div class="text-center border">
+                            <span class="h3 text-center">$ {{totalPagar.toFixed(2)}}</span>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal"><i class="bi bi-bag"></i> Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+
