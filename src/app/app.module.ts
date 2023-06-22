@@ -26,7 +26,7 @@ import { HomeComponent } from './components/home/home.component';
     RegistroComponent,
     RestablecerContraComponent,
     SobreNosotrosComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
