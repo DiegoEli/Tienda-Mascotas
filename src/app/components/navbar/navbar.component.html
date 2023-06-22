@@ -1,8 +1,10 @@
 <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 
         <a class="navbar-brand col-lg-3 me-0" routerLink="/#/">
-            <img src="https://static.vecteezy.com/system/resources/previews/009/326/563/large_2x/paw-print-icon-on-white-background-flat-style-dog-cat-beer-paw-symbol-black-animal-paw-print-sign-paw-prints-logo-vector.jpg" alt="Logo" width="35">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/326/563/large_2x/paw-print-icon-on-white-background-flat-style-dog-cat-beer-paw-symbol-black-animal-paw-print-sign-paw-prints-logo-vector.jpg"
+                alt="Logo" width="35">
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="pills-tab" role="tablist">
@@ -13,14 +15,17 @@
             </li>
 
             <li class="nav-item" role="presentation">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Catalogo</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    aria-expanded="false">Catalogo</a>
                 <ul class="dropdown-menu" data-bs-popper="static">
 
                     <h6 class="dropdown-header"> Mascotas</h6>
                     <li><a class="dropdown-item" routerLink="/perros/">Perros</a></li>
                     <li><a class="dropdown-item" routerLink="/gatos/">Gatos</a></li>
                     <li><a class="dropdown-item" routerLink="/conejos/">Conejos</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
 
                     <h6 class="dropdown-header"> Categorías</h6>
                     <li><a class="dropdown-item" routerLink="/#/">Todas</a></li>
@@ -39,9 +44,66 @@
 
         <div class="col-md-3 text-end">
             <button type="button" routerLink="/login/" class="btn btn-outline-primary me-2">Iniciar sesión</button>
-            <button type="button" routerLink="/registro/" class="btn btn-primary">Registrarse</button>
+            <button type="button" routerLink="/registro/" class="btn btn-primary">CARRITO</button>
         </div>
 
     </header>
 </div>
 
+
+<!-- Segundo menu -->
+<nav class="navbar navbar-expand-lg" aria-label="Eleventh navbar example">
+    <div class="container py-2 mb-3 border-bottom">
+
+        <a class="navbar-brand" routerLink="/#/">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/326/563/large_2x/paw-print-icon-on-white-background-flat-style-dog-cat-beer-paw-symbol-black-animal-paw-print-sign-paw-prints-logo-vector.jpg"
+                alt="Logo" width="35">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-center" id="navbarsExample09" style="">
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-home-tab" routerLink="/#/" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="false">Inicio</button>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                        aria-expanded="false">Catalogo</a>
+                    <ul class="dropdown-menu" data-bs-popper="static">
+                        <h6 class="dropdown-header"> Mascotas</h6>
+                        <li><a class="dropdown-item" routerLink="/perros/">Perros</a></li>
+                        <li><a class="dropdown-item" routerLink="/gatos/">Gatos</a></li>
+                        <li><a class="dropdown-item" routerLink="/conejos/">Conejos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <h6 class="dropdown-header"> Categorías</h6>
+                        <li><a class="dropdown-item" routerLink="/#/">Todas</a></li>
+                        <li><a class="dropdown-item" routerLink="/#/">Alimento</a></li>
+                        <li><a class="dropdown-item" routerLink="/#/">Juguetes</a></li>
+                        <li><a class="dropdown-item" routerLink="/#/">Limpieza</a></li>
+                        <li><a class="dropdown-item" routerLink="/#/">Salud</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-about-tab" routerLink="/sobre-nosotros/" type="button" role="tab"
+                        aria-controls="pills-about" aria-selected="false">Sobre Nosotros</button>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <button type="button" routerLink="/login/" class="btn btn-outline-primary me-2">Iniciar sesión</button>
+            <button type="button" class="btn btn-primary"><i class="bi bi-cart4"></i> Carrito</button>
+        </div>
+
+    </div>
+</nav>
