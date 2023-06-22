@@ -1,0 +1,18 @@
+.section-image {
+    float: left;
+    /* Alinear la imagen a la izquierda */
+    margin-right: 10px;
+    /* Agregar un pequeño espacio entre la imagen y el texto */
+    width: 100px;
+    /* Establecer el ancho deseado para la imagen */
+    height: auto;
+    /* Permitir que la altura se ajuste automáticamente según el ancho */
+}
+.disenio{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
