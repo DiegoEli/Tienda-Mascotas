@@ -15,7 +15,7 @@ export class PerrosComponent {
       idCategoria: 1, precioVenta: 3, stock: 30, urlFoto: "./assets/img/prod-perros/P0001.jpg"},
       {idProducto: 2, nombre: "Collar de cuero", descripcion: "Collar de cuero para perros",
       idCategoria: 1, precioVenta: 3, stock: 25, urlFoto: "./assets/img/prod-perros/P0002.jpg"},
-      {idProducto: 3, nombre: "Comida Para Perro Pro-Can", descripcion: "Comida Para Perro Cachorro Raza Mediana Pro-Can",
+      {idProducto: 3, nombre: "Comida Pro-Can", descripcion: "Comida Para Perro Cachorro Raza Mediana Pro-Can",
       idCategoria: 1, precioVenta: 3, stock: 6, urlFoto: "./assets/img/prod-perros/P0003.jpg"},
       {idProducto: 4, nombre: "Cepillo para perros", descripcion: "Cepillo para perros",
       idCategoria: 1, precioVenta: 3, stock: 9, urlFoto: "./assets/img/prod-perros/P0004.jpg"},
