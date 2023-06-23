@@ -17,6 +17,7 @@ export class PerrosComponent implements OnInit {
   }
 
   agregarCarrito(){
+    window.alert("Producto añadido al carrito.");
   }
 
   openModal(){
