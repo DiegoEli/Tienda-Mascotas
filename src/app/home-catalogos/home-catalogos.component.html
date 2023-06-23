@@ -1,9 +1,107 @@
-<div class="card" style="width: 18rem;">
-    <img src="./assets/img-estructura/perro.jpg" class="card-img-top" alt="Descripción de la imagen">
-    <div class="card-body">
-      <h5 class="card-title">Perro</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<section id="product">
+    <div class="container">
+        <nav class="p-1 navbar navbar-light bg-light">
+            <span>
+                <a href="#"> Inicio /</a> 
+                <a routerLink="/perros"> Catálogo /</a>
+                <span> Perros</span> 
+            </span>
+        </nav>
+      <div class="row mt-2">
+        <div class="col-md-3">
+          <div class="card" style="width: 200px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 23px;"><b>Mascotas</b></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="font-size: 16px;" routerLink="/perros">Perros</li>
+                <li class="list-group-item" style="font-size: 16px;" routerLink="/gatos">Gato</li>
+                <li class="list-group-item" style="font-size: 16px;" routerLink="/conejos">Conejos</li>
+              </ul>
+            </div>
+            <hr style="margin: 5px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 23px;"><b>Categorías</b></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="font-size: 16px;">Todas</li>
+                <li class="list-group-item" style="font-size: 16px;">Alimento</li>
+                <li class="list-group-item" style="font-size: 16px;">Juguetes</li>
+                <li class="list-group-item" style="font-size: 16px;">Limpieza</li>
+                <li class="list-group-item" style="font-size: 16px;">Salud</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/home-catalogos/alimento.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/home-catalogos/juguetes.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/home-catalogos/limpieza.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/home-catalogos/salud.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
   
+<div class="elementor-widget-container text-center" style="padding: 30px;">
+        <h2 class="elementor-heading-title elementor-size-default">SOMOS UNA TIENDA DE MASCOTAS</h2>
+    </div>
+
+      <div class="elementor-widget-container text-center" style="padding: 20px;">
+        <h3 class="elementor-heading-title elementor-size-default">En Peluditos tenemos una gran variedad de productos y alimentos para todo tipo de mascotas</h3>
+      </div>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-perro" style="width: 18rem;">
+              <img src="./assets/home-catalogos/perro.jpg" class="card-img-top" alt="perro">
+              <div class="card-body">
+                <h5 class="card-title text-center">Perros</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card card-gato" style="width: 18rem;">
+              <img src="./assets/home-catalogos/gato.png" class="card-img-top" alt="gato">
+              <div class="card-body">
+                <h5 class="card-title text-center">Gatos</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card card-conejo" style="width: 18.5rem;">
+              <img src="./assets/home-catalogos/conejo.jpg" class="card-img-top" alt="conejo">
+              <div class="card-body">
+                <h5 class="card-title text-center">Conejos</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
