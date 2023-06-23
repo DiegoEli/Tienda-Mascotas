@@ -8,7 +8,8 @@ import { Producto } from 'src/app/interfaces/producto';
   styleUrls: ['./perros.component.css']
 })
 export class PerrosComponent implements OnInit {
-  listaProductos: Producto[] = [];  
+  listaProductos: Producto[] = [];
+  productoSeleccionado!: Producto;
 
   constructor(){
   }
@@ -34,8 +35,8 @@ export class PerrosComponent implements OnInit {
     }
   }
 
-  obtenerObjeto(i: number): Producto{
-    return this.listaProductos[i];
+  obtenerObjeto(i: number){
+    this.productoSeleccionado = this.listaProductos[i];
   }
 
   cargarDatos(){
