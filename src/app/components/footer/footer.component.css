@@ -1,0 +1,33 @@
+i{
+    font-size: 800%;
+    color: rgb(255, 202, 202);
+}
+p{
+    font-size: 19px;
+    color: #8d8d8d;
+}
+ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666464f8;
+}
+h5{
+    margin-bottom: 5px;
+    color: #363636;
+}
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content-divider {
+    border-bottom: 1px solid rgb(222, 226, 230); /*Establece el color y el grosor del borde*/
+    padding-bottom: 20px; /*Opcional: Añade un espacio de separación entre el borde y el contenido */
+}
+.con_borde{
+    border-right: 1px solid rgb(222, 226, 230);
+}
