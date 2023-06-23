@@ -8,8 +8,7 @@ import { Producto } from 'src/app/interfaces/producto';
   styleUrls: ['./perros.component.css']
 })
 export class PerrosComponent implements OnInit {
-  listaProductos: Producto[] = [];
-  productoSeleccionado: any;
+  listaProductos: Producto[] = [];  
 
   constructor(){
   }
@@ -20,11 +19,10 @@ export class PerrosComponent implements OnInit {
   agregarCarrito(){
   }
 
-  openModal(i: number){
+  openModal(){
     const model = document.getElementById('detalle');
     if (model != null){
       model.style.display = 'block';
-      //this.productoSeleccionado = this.listaProductos[i];
     }
   }
 
@@ -33,6 +31,10 @@ export class PerrosComponent implements OnInit {
     if (model != null){
       model.style.display = 'none';
     }
+  }
+
+  obtenerObjeto(i: number): Producto{
+    return this.listaProductos[i];
   }
 
   cargarDatos(){

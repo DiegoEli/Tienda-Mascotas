@@ -28,4 +28,18 @@ export class CarritoComponent implements OnInit {
   quitarProducto(indice:number):void{
     this.listPedido.splice(indice,1);
   }
+
+  openModal(){
+    const model = document.getElementById('cobro');
+    if (model != null){
+      model.style.display = 'block';
+    }
+  }
+
+  closeModal(){
+    const model = document.getElementById('cobro');
+    if (model != null){
+      model.style.display = 'none';
+    }
+  }
 }

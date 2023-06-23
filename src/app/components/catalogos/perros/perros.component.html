@@ -52,7 +52,7 @@
                                         <br>Disponible: <span
                                         class="text-black fw-semibold me-2">{{product.stock}}</span></p>                                     
                                     <div class="text-center">
-                                        <button class="btn btn-sm btn-dark" (click)="openModal(i)"><i class="bi bi-eye"></i></button>
+                                        <button class="btn btn-sm btn-dark" (click)="openModal()"><i class="bi bi-eye"></i></button>
 
                                         <div class="modal fade show" id="detalle" tabindex="-1">
                                             <div class="modal-dialog modal-dialog-centered">
@@ -63,7 +63,7 @@
                                                 <div class="modal-body">
                                                     <div class="row">
                                                         <div class="col-5">
-                                                            <img class="img-fluid" style="height: 150px;" [src]="product.urlFoto">
+                                                            <img class="img-fluid" style="height: 150px;" [src]="obtenerObjeto(i).urlFoto">
                                                         </div>
                                                         <div class="col-4">
                                                             <span>{{product.nombre}}</span><br>
