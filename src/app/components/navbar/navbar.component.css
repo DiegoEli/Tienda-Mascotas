@@ -1,0 +1,8 @@
+.navbar-nav {
+    display: flex;
+    justify-content: center !important;
+}
+
+/* .nav-link {
+    color: blue !important;
+} */
