@@ -23,7 +23,7 @@ const routes: Routes = [
   { path:'restablecer-contra', component: RestablecerContraComponent },
   { path:'sobre-nosotros', component: SobreNosotrosComponent },
   { path:'carrito', component: CarritoComponent },
-  { path: 'home-catalogos', component: HomeCatalogosComponent },
+  { path:'home-catalogos', component: HomeCatalogosComponent },
   { path:'**',redirectTo: 'home', pathMatch: 'full' }
 ];
 
