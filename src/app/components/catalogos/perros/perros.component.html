@@ -11,7 +11,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title"><b>Mascotas</b></h5>
+                        <h6 class="card-title"><b>Mascotas</b></h6>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item" routerLink="/perros">Perros</li>
                             <li class="list-group-item" routerLink="/gatos">Gato</li>
@@ -20,7 +20,7 @@
                     </div>
                     <hr>
                     <div class="card-body">
-                        <h5 class="card-title"><b>Categorías</b></h5>
+                        <h6 class="card-title"><b>Categorías</b></h6>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Todas</li>
                             <li class="list-group-item">Alimento</li>
@@ -34,11 +34,13 @@
             <div class="col-10">
                 <div class="productHeading text-center">
                     <img class="card-img-top mt-1" src="./assets/img/banner-catalogo.jpg" alt="Card image cap">
-                    <h2 class="mb-3">Catálogo para Perros</h2>
+                    <div style="background-color: #f3943b; color: white;">
+                        <h4 class="p-1">Catálogo para Perros</h4>
+                    </div>
                     <hr>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductos">
+                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductos; let i=index">
                         <div class="box-shadow">
                             <div class="card">
                                 <img class="img-fluid" style="height: 150px;" [src]="product.urlFoto" class="card-img-top"
@@ -50,23 +52,28 @@
                                         <br>Disponible: <span
                                         class="text-black fw-semibold me-2">{{product.stock}}</span></p>                                     
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#exampleModalCenter"><i class="bi bi-eye"></i></button>
+                                        <button class="btn btn-sm btn-dark" (click)="openModal()"><i class="bi bi-eye"></i></button>
 
-                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal fade show" id="detalle" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
                                               <div class="modal-content">
                                                 <div class="modal-header">
-                                                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                  </button>
+                                                    <span class="modal-title">Producto</span>
                                                 </div>
                                                 <div class="modal-body">
-                                                  ...
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <img class="img-fluid" style="height: 150px;" [src]="obtenerObjeto(i).urlFoto">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <span>{{product.nombre}}</span><br>
+                                                            <span><b>Precio: </b>$ {{product.precioVenta.toFixed(2)}}</span>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                    <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
                                                 </div>
                                               </div>
                                             </div>
@@ -85,5 +92,7 @@
         </div>
     </div>
 </section>
+
+
 
 

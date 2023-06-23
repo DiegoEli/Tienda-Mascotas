@@ -24,4 +24,22 @@ export class CarritoComponent implements OnInit {
   sumaTotal(){
     this.listPedido.forEach(element => this.totalPagar = this.totalPagar + element.total);
   }
+
+  quitarProducto(indice:number):void{
+    this.listPedido.splice(indice,1);
+  }
+
+  openModal(){
+    const model = document.getElementById('cobro');
+    if (model != null){
+      model.style.display = 'block';
+    }
+  }
+
+  closeModal(){
+    const model = document.getElementById('cobro');
+    if (model != null){
+      model.style.display = 'none';
+    }
+  }
 }

@@ -11,10 +11,10 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Mascotas</h6>
+                        <h5 class="card-title"><b>Mascotas</b></h5>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item" routerLink="/perros">Perros</li>
-                            <li class="list-group-item" routerLink="/gatos">Gato</li>
+                            <li class="list-group-item" routerLink="/gatos" (click)="mostrarProducto()">Gato</li>
                             <li class="list-group-item" routerLink="/conejos">Conejos</li>
                           </ul>
                         </div>
@@ -22,10 +22,10 @@
                     <div class="card-body">
                         <h6 class="card-title">Categorías</h6>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Todas</li>
-                            <li class="list-group-item">Alimento</li>
-                            <li class="list-group-item">Juguetes</li>
-                            <li class="list-group-item">Limpieza</li>
+                            <li class="list-group-item" (click)="filtrarPorCategoria('Todas')">Todas</li>
+                            <li class="list-group-item" (click)="filtrarPorCategoria('Alimento')">Alimento</li>
+                            <li class="list-group-item" (click)="filtrarPorCategoria('Juguetes')">Juguetes</li>
+                            <li class="list-group-item" (click)="filtrarPorCategoria('Limpieza')">Limpieza</li>
                             <li class="list-group-item">Salud</li>
                           </ul>
                         </div>
@@ -38,20 +38,41 @@
                     <hr>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-3 pt-1" *ngFor="let product of listaProductosGatos">
+                    <div class="col-lg-3 pt-1" *ngFor="let product of listaFiltrada">
                         <div class="box-shadow">
                             <div class="card">
-                                <img class="img-fluid" style="height: 100px width=75px;" [src]="product.urlFoto" class="card-img-top"
+                                <img class="img-fluid" style="height: 250px;" [src]="product.urlFoto" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
-                                    <h6 class="card-title text-center">{{product.nombre}}</h6>
+                                    <h5 class="card-title text-center">{{product.nombre}}</h5>
                                     <p class="card-text">Precio: <span
-                                            class="text-danger fw-semibold me-2">${{product.precioVenta}}</span><del> ${{product.precioVenta}}</del>
-                                        <span class="text-success ms-2">20% Off</span>
+                                            class="text-danger fw-semibold me-2">$ {{product.precioVenta.toFixed(2)}}</span>
                                         <br>Disponible: <span
                                         class="text-black fw-semibold me-2">{{product.stock}}</span></p>                                     
                                     <div class="text-center">
-                                        <button class="btn btn-sm btn-primary" 
+                                        <button type="button" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#exampleModalCenter"><i class="bi bi-eye"></i></button>
+
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        <button class="btn btn-sm btn-primary" style="margin-left: 4px;" 
                                             (click)="agregarCarrito()">
                                             <i class="bi bi-cart-plus-fill"></i> Añadir al Carrito</button>
                                     </div>
