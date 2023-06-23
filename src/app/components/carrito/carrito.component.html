@@ -57,12 +57,13 @@
 </section>
 
 <div class="modal fade show" id="cobro" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" style="width: 300px;">
+    <div class="modal-dialog modal-dialog-centered" style="width: 400px;">
       <div class="modal-content">
         <div class="modal-header">
             <div class="text-center" style="width: 100%;">
                 <span class="modal-title"><b>Identifícate/Regístrate</b></span>
             </div>
+            <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
         </div>
         <div class="modal-body" style="width: 100%;">
             <div class="text-center">
@@ -70,15 +71,15 @@
                 <div class="mb-2">
                     <button type="button" class="btn btn-primary" routerLink="/login/" style="width: 80%;">Iniciar Sesion</button>
                 </div>
+                <hr>
+                <div>
+                    <p style="font-size: 10px;">Con tu cuenta podrás realizar compras en línea, 
+                        consultar el histórico de tus compras realizadas y acceder a 
+                        todos los servicios que tenemos para tí. </p>
+                </div>
                 <div>
                     <button type="button" class="btn btn-secondary" routerLink="/registro/" style="width: 80%;">Registrarse</button>
                 </div>
-                
-            </div>
-        </div>
-        <div class="modal-footer">
-            <div class="text-center" style="width: 100%;">
-                <button type="button" class="btn btn-secondary" (click)="closeModal()" style="width: 40%;">Salir</button>
             </div>
         </div>
       </div>
