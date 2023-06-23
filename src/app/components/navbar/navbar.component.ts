@@ -16,5 +16,4 @@ export class NavbarComponent {
       {urlFoto: "./assets/img/prod-perros/P0003.jpg", descripcion: "Comida Para Perro Cachorro Raza Mediana Pro-Can", precioVenta: 3, cantidad: 2, total: 6}
     ]
   }
-
 }

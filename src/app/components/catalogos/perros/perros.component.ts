@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Producto } from 'src/app/interfaces/producto';
 
 @Component({
@@ -6,10 +7,35 @@ import { Producto } from 'src/app/interfaces/producto';
   templateUrl: './perros.component.html',
   styleUrls: ['./perros.component.css']
 })
-export class PerrosComponent {
+export class PerrosComponent implements OnInit {
   listaProductos: Producto[] = [];
+  productoSeleccionado: any;
 
   constructor(){
+  }
+  ngOnInit(): void {
+    this.cargarDatos();
+  }
+
+  agregarCarrito(){
+  }
+
+  openModal(i: number){
+    const model = document.getElementById('detalle');
+    if (model != null){
+      model.style.display = 'block';
+      //this.productoSeleccionado = this.listaProductos[i];
+    }
+  }
+
+  closeModal(){
+    const model = document.getElementById('detalle');
+    if (model != null){
+      model.style.display = 'none';
+    }
+  }
+
+  cargarDatos(){
     this.listaProductos = [
       {idProducto: 1, nombre: "Hueso de hule", descripcion: "Hueso de hule para perros",
       idCategoria: 1, precioVenta: 3, stock: 30, urlFoto: "./assets/img/prod-perros/P0001.jpg"},
@@ -24,9 +50,5 @@ export class PerrosComponent {
       {idProducto: 6, nombre: "Cama para perros", descripcion: "Hueso de hule par perros",
       idCategoria: 1, precioVenta: 3, stock: 25, urlFoto: "./assets/img/prod-perros/P0006.jpg"}
     ]
-  }
-
-  agregarCarrito(){
-
   }
 }

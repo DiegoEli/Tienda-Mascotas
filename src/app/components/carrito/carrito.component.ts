@@ -24,4 +24,8 @@ export class CarritoComponent implements OnInit {
   sumaTotal(){
     this.listPedido.forEach(element => this.totalPagar = this.totalPagar + element.total);
   }
+
+  quitarProducto(indice:number):void{
+    this.listPedido.splice(indice,1);
+  }
 }
