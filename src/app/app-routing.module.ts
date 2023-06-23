@@ -10,6 +10,7 @@ import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotr
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
+import { HomeCatalogosComponent } from './home-catalogos/home-catalogos.component';
 
 const routes: Routes = [
   { path:'',redirectTo: 'home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path:'restablecer-contra', component: RestablecerContraComponent },
   { path:'sobre-nosotros', component: SobreNosotrosComponent },
   { path:'carrito', component: CarritoComponent },
+  { path: 'home-catalogos', component: HomeCatalogosComponent },
   { path:'**',redirectTo: 'home', pathMatch: 'full' }
 ];
 

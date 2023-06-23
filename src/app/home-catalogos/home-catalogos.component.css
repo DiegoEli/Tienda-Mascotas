@@ -1,0 +1,20 @@
+  .card-perro {
+    background-color: rgb(99, 75, 53);
+    color: white;
+  }
+  
+  .card-gato {
+    background-color: rgb(40, 160, 80);
+    color: white;
+  }
+  
+  .card-conejo {
+    background-color: rgb(189, 187, 66);
+    color: white;
+  }
+
+  .elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
