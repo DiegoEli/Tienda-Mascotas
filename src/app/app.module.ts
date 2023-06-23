@@ -15,6 +15,7 @@ import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotr
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarritoComponent } from './components/carrito/carrito.component';
+import { HomeCatalogosComponent } from './home-catalogos/home-catalogos.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CarritoComponent } from './components/carrito/carrito.component';
     RestablecerContraComponent,
     SobreNosotrosComponent,
     HomeComponent,
-    CarritoComponent
+    CarritoComponent,
+    HomeCatalogosComponent
   ],
   imports: [
     BrowserModule,
