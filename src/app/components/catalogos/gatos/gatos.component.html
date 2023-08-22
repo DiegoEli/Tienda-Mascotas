@@ -14,7 +14,7 @@
                         <h5 class="card-title"><b>Mascotas</b></h5>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item" routerLink="/perros">Perros</li>
-                            <li class="list-group-item" routerLink="/gatos" (click)="mostrarProducto()">Gato</li>
+                            <!-- <li class="list-group-item" routerLink="/gatos" (click)="mostrarProducto()">Gato</li> -->
                             <li class="list-group-item" routerLink="/conejos">Conejos</li>
                           </ul>
                         </div>
@@ -22,10 +22,10 @@
                     <div class="card-body">
                         <h6 class="card-title">Categorías</h6>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item" (click)="filtrarPorCategoria('Todas')">Todas</li>
+                            <!-- <li class="list-group-item" (click)="filtrarPorCategoria('Todas')">Todas</li>
                             <li class="list-group-item" (click)="filtrarPorCategoria('Alimento')">Alimento</li>
                             <li class="list-group-item" (click)="filtrarPorCategoria('Juguetes')">Juguetes</li>
-                            <li class="list-group-item" (click)="filtrarPorCategoria('Limpieza')">Limpieza</li>
+                            <li class="list-group-item" (click)="filtrarPorCategoria('Limpieza')">Limpieza</li> -->
                             <li class="list-group-item">Salud</li>
                           </ul>
                         </div>
@@ -38,7 +38,7 @@
                     <hr>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-3 pt-1" *ngFor="let product of listaFiltrada">
+                    <!-- <div class="col-lg-3 pt-1" *ngFor="let product of listaFiltrada">
                         <div class="box-shadow">
                             <div class="card">
                                 <img class="img-fluid" style="height: 250px;" [src]="product.urlFoto" class="card-img-top"
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>  -->
                 </div>
             </div>
         </div>
