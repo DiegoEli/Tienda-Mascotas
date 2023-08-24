@@ -10,7 +10,7 @@ import { CategoriaInterface } from '../interfaces/categoria/categoria.module';
 export class CategoriaService {
   
   private myAppUrl: string = environment.endpoint;
-  private myApiUrl: string = 'api/Categoria/listarCategorias';
+  private myApiUrl: string = 'api/Categoria/';
 
   constructor(
     private http: HttpClient

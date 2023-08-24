@@ -10,7 +10,7 @@ import { EstadoCivilInterface } from '../interfaces/estado-civil/estado-civil.mo
 export class EstadoCivilService {
   
   private myAppUrl: string = environment.endpoint;
-  private myApiUrl: string = 'api/EstadoCivil/listarEstadoCivil';
+  private myApiUrl: string = 'api/EstadoCivil/';
 
   constructor(
     private http: HttpClient

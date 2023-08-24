@@ -10,7 +10,7 @@ import { TipoPagoInterface } from '../interfaces/tipo-pago/tipo-pago.module';
 export class TipoPagoService {
 
   private myAppUrl: string = environment.endpoint;
-  private myApiUrl: string = 'api/TipoPago/listarTipoPago';
+  private myApiUrl: string = 'api/TipoPago/';
 
   constructor(
     private http: HttpClient

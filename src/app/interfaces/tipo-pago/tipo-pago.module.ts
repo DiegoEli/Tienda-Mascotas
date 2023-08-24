@@ -1,6 +1,6 @@
 export interface TipoPagoInterface {
   IdTipoPago?: number,
-  Nombre: string,
+  Descripcion: string,
   Estado: boolean,
   CreadoDate: Date
 }
