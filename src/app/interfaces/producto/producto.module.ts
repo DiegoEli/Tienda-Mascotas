@@ -1,10 +1,11 @@
 export interface ProductoInterface {
-  IdProducto?: number,
-  Descripcion: string,
-  IdCategoria: number,
-  Stock: number,
-  PrecioCosto: number,
-  PrecioVenta: number,
-  Estado: boolean,
-  CreadoDate: Date
+  idProducto: number,
+  descripcion?: string,
+  idCategoria: number,
+  nombreCategoria?: string,
+  stock: number,
+  precioCosto: number,
+  precioVenta: number,
+  rutaFoto?: string,
+  estado: boolean,
 }

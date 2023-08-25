@@ -23,11 +23,10 @@
                         <h6 class="card-title"><b>Categorías</b></h6>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Todas</li>
-                            <li class="list-group-item">Alimento</li>
-                            <li class="list-group-item">Juguetes</li>
-                            <li class="list-group-item">Limpieza</li>
-                            <li class="list-group-item">Salud</li>
-                          </ul>
+                        </ul>
+                        <ul class="list-group list-group-flush" *ngFor="let cat of listaCategorias;">
+                            <li class="list-group-item">{{cat.nombre}}</li>
+                        </ul>
                     </div>
                   </div>
             </div>
@@ -43,10 +42,10 @@
                     <div class="col-lg-3 pt-1" *ngFor="let product of listaProductos; let i=index">
                         <div class="box-shadow">
                             <div class="card">
-                                <img class="img-fluid" style="height: 200px;" [src]="product.urlFoto" class="card-img-top"
+                                <img class="img-fluid" style="height: 200px;" [src]="product.rutaFoto" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">{{product.nombre}}</h5>
+                                    <h6 class="card-title text-center">{{product.descripcion}}</h6>
                                     <p class="card-text">Precio: <span
                                             class="text-danger fw-semibold me-2">$ {{product.precioVenta.toFixed(2)}}</span>
                                         <br>Disponible: <span
@@ -60,14 +59,14 @@
                                               <div class="modal-content">
                                                 <div class="modal-header" style="background-color: #f3943b; color: white;">
                                                     <div class="text-center" style="width: 100%;">
-                                                        <span class="modal-title"><b>{{product.nombre}}</b></span>
+                                                        <span class="modal-title"><b>{{product.descripcion}}</b></span>
                                                     </div>
                                                     <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="row" style="width: 100%;">
                                                         <div class="col-5">
-                                                            <img class="img-fluid" style="height: 150px;" [src]="product.urlFoto">
+                                                            <img class="img-fluid" style="height: 150px;" [src]="product.rutaFoto">
                                                         </div>
                                                         <div class="col" style="text-align: left;">
                                                             <p><b>Descripción: </b>{{product.descripcion}}</p>

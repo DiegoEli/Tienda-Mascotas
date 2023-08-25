@@ -17,7 +17,7 @@ export class CategoriaService {
   ) { }
 
   getCategorias(): Observable<CategoriaInterface[]>{
-    return this.http.get<CategoriaInterface[]>(`${this.myAppUrl}${this.myApiUrl}`);
+    return this.http.get<CategoriaInterface[]>(`${this.myAppUrl}${this.myApiUrl}listarCategorias`);
   }
 
   getCategoria(id: number): Observable<CategoriaInterface>{

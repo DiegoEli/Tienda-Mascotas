@@ -17,11 +17,11 @@ export class ProductoService {
   ) { }
 
   getProductos(): Observable<ProductoInterface[]>{
-    return this.http.get<ProductoInterface[]>(`${this.myAppUrl}${this.myApiUrl}`);
+    return this.http.get<ProductoInterface[]>(`${this.myAppUrl}${this.myApiUrl}listarProductos`);
   }
 
   getProducto(id: number): Observable<ProductoInterface>{
-    return this.http.get<ProductoInterface>(`${this.myAppUrl}${this.myApiUrl}${id}`);
+    return this.http.get<ProductoInterface>(`${this.myAppUrl}${this.myApiUrl}obtenerProducto/${id}`);
   }
 
   deleteProducto(id: number): Observable<void>{
